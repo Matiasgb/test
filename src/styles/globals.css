@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-h1-family: "Aktiv Grotesk", sans-serif;
+  --font-h1-size: 40px;
+  --font-h1-weight: 300;
+  --font-h1-line-height: 54px;
+
+  --font-body-family: "Aktiv Grotesk", sans-serif;
+  --font-body-size: 18px;
+  --font-body-weight: 400;
+  --font-body-line-height: 23px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: var(--font-h1-family);
+  font-size: var(--font-h1-size);
+  font-weight: var(--font-h1-weight);
+  line-height: var(--font-h1-line-height);
+}
+
+h2 {
+  font-family: var(--font-h1-family);
+ 
+  font-weight: var(--font-h1-weight);
+  line-height: var(--font-h1-line-height);
+}
+
+body {
+  font-family: var(--font-body-family);
+  font-size: var(--font-body-size);
+  font-weight: var(--font-body-weight);
+  line-height: var(--font-body-line-height);
+}
+p {
+  font-family: var(--font-body-family);
+  
+ 
+  line-height: var(--font-body-line-height);
+}
+
+
+
+.font-questa {
+  font-family: "Questa", sans-serif;
+}
+
+.bg-gold {
+  background-color: #CFA04F;
+}
